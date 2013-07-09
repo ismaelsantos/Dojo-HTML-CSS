@@ -1,0 +1,227 @@
+body{
+	color:grey;
+	font-family:Arial;
+}
+	
+.div1{
+	position: absolute;
+	border:1px solid black;
+	width: 1000px;
+	height: 500px;
+	
+	/*--CENTRALIZA A PAGINA--*/
+	margin-left:-500px;
+	margin-top:-250px;
+	left:50%;
+	top:50%;
+	/*-----------------------*/
+}	
+.div2{
+	position: absolute;
+	border:1px solid black;
+	width: 200px;
+	height: 100px;
+	background-color: red;
+	
+	/*-----------------------*/
+	margin-left:-100px;
+	margin-top:-50px;
+	left:90%;
+	top:50%;
+	/*-----------------------*/
+}
+
+#div3{
+	position: absolute;
+	border:1px dotted black;
+	width: 200px;
+	height: 100px;
+	
+	/*-----------------------*/
+	margin-left:-100px;
+	margin-top:-50px;
+	left:10%;
+	top:50%;
+	/*-----------------------*/
+}
+#div4{
+	position: absolute;
+	border:25px solid rgb(255,240,2);
+	width:200px;
+	height: 100px;
+	text-align: center;
+	
+	/*-----------------------*/
+	margin-left:-100px;
+	margin-top:-50px;
+	left:85%;
+	top:80%;	
+	/*-----------------------*/
+}
+#div4 > p{
+	text-align: left;
+}
+
+#chuck{
+	
+	width: 20%;
+	height: 50%;
+	background-image:url(http://t2.gstatic.com/images?q=tbn:ANd9GcTQcc0Yo9fJ2MLaU6a-ntyW3JMkJeC3vQ0MiJLmgiND2nIS0GvB);
+	opacity:0.4;
+	text-align: center;
+	
+	color: red;
+	
+	margin-left:40%;
+	margin-top:10%;
+	left: 50%;
+	top: 50%;
+}
+#chuck > p {
+	text-align: left;
+}
+
+
+#bt-menu, #bt-menu ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+#bt-menu {
+	width: 1000px;
+	margin: 0px auto;
+	background: #DADFE1;
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	-moz-box-shadow: 0 1px 1px #777;
+	-webkit-box-shadow: 0 1px 1px #777;
+	box-shadow: 0 1px 1px #777;
+}
+#bt-menu:before,
+#bt-menu:after {
+	content: "";
+	display: table;
+}
+#bt-menu:after {
+	clear: both;
+}
+#bt-menu {
+	zoom:1;
+}
+#bt-menu li {
+	float: left;
+	-moz-box-shadow: 1px 0 0 #444;
+	-webkit-box-shadow: 1px 0 0 #444;
+	box-shadow: 1px 0 0 #444;
+	position: relative;
+}
+#bt-menu a {
+	float: left;
+	padding: 12px 30px;
+	color: #000000;
+	text-transform: uppercase;
+	font: bold 12px Arial, Helvetica;
+	text-decoration: none;
+	text-shadow: 0 0px 0 #000;
+}
+#bt-menu li:hover > a {
+	background: #333333;
+	color: #fafafa;
+}
+*html #bt-menu li a:hover { /* IE6 only */
+	color: #333333;
+}
+#bt-menu ul {
+	margin: 20px 0 0 0;
+	_margin: 0; /*IE6 only*/
+	opacity: 0;
+	visibility: hidden;
+	position: absolute;
+	top: 38px;
+	left: 0;
+	z-index: 9999;
+	background: #DADFE1 url('images/pageglare.png') no-repeat scroll;
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	border-radius: 3px;
+	-webkit-transition: all .3s ease-in-out;
+	-moz-transition: all .3s ease-in-out;
+	-ms-transition: all .3s ease-in-out;
+	-o-transition: all .3s ease-in-out;
+	transition: all .3s ease-in-out;
+}
+#bt-menu li:hover > ul {
+	opacity: 1;
+	visibility: visible;
+	margin: 0;
+}
+#bt-menu ul ul {
+	top: 0;
+	left: 150px;
+	margin: 0 0 0 20px;
+	_margin: 0; /*IE6 only*/
+	-moz-box-shadow: -1px 0 0 rgba(255,255,255,.3);
+	-webkit-box-shadow: -1px 0 0 rgba(255,255,255,.3);
+	box-shadow: -1px 0 0 rgba(255,255,255,.3);
+}
+#bt-menu ul li {
+	float: none;
+	display: block;
+	border: 0;
+	_line-height: 0; /*IE6 only*/
+	-moz-box-shadow: 0 1px 0 #111, 0 2px 0 #666;
+	-webkit-box-shadow: 0 1px 0 #111, 0 2px 0 #666;
+	box-shadow: 0 1px 0 #111, 0 2px 0 #666;
+}
+#bt-menu ul li:last-child {
+	-moz-box-shadow: none;
+	-webkit-box-shadow: none;
+	box-shadow: none;
+}
+#bt-menu ul a {
+	padding: 10px;
+	width: 130px;
+	_height: 10px; /*IE6 only*/
+	display: block;
+	white-space: nowrap;
+	float: none;
+	text-transform: none;
+}
+#bt-menu ul a:hover {
+	background-color: #333333;
+}
+#bt-menu ul li:first-child > a {
+	-moz-border-radius: 3px 3px 0 0;
+	-webkit-border-radius: 3px 3px 0 0;
+	border-radius: 3px 3px 0 0;
+}
+#bt-menu ul li:first-child > a:after {
+	content: '';
+	position: absolute;
+	left: 40px;
+	top: -6px;
+	border-left: 6px solid transparent;
+	border-right: 6px solid transparent;
+	border-bottom: 6px solid #333333;
+}
+#bt-menu ul ul li:first-child a:after {
+	left: -6px;
+	top: 50%;
+	margin-top: -6px;
+	border-left: 0;
+	border-bottom: 6px solid transparent;
+	border-top: 6px solid transparent;
+	border-right: 6px solid #333333;
+}
+#bt-menu ul li:first-child a:hover:after {
+	border-bottom-color: #DADFE1;
+}
+#bt-menu ul ul li:first-child a:hover:after{
+	border-right-color: #DADFE1;
+	border-bottom-color: transparent;
+}
+#bt-menu ul li:last-child > a{
+	-moz-border-radius: 0 0 3px 3px;
+	-webkit-border-radius: 0 0 3px 3px;
+	border-radius: 0 0 3px 3px;
+}
